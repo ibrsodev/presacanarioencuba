@@ -1,0 +1,715 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+} 
+
+body{
+    font-size: 20px;
+    font-family: serif;
+    margin-bottom: 200px;
+}
+
+.navegacion{
+    font-size: 17px;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right,#927d55, #806e5a );
+    position: fixed;
+    z-index: 97;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    color: black;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.navegacion li {
+    list-style: none;
+    color: #000000;
+    font-size: 1.5rem;
+}
+.navegacion ul {
+    display: flex;
+}
+
+.navegacion ul{
+    display: flex;
+    width: 100%;
+}
+.navegacion ul img{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#dosN{
+text-align: left;
+margin-right: 10px;
+cursor: pointer;
+}
+#unoN{
+margin-left:5px ;
+margin-top: 15px;
+}
+
+.navegacionGaleria{
+    height: 120px;
+}
+
+
+/************************************************************************************/
+
+.menuD{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    background: #2f3640;
+    min-height: 800px;
+    width: 300px;
+    padding-top: 20px;
+    transition: transform .5s ease-in-out;
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    height: 100%;
+}
+
+.showMenu{
+    transform: translate(-400px);
+}
+
+.menuDesplegable a ul{
+    display: none;
+}
+
+.menuDesplegable li{
+    list-style: none;
+    color: #806e5a;
+    margin-left: 10px;
+}
+.menuDesplegable .separa{
+    margin-bottom: 2px;
+}
+.grande{
+    font-size: 30px;
+}
+
+.menuDesplegable a{
+    color: #806e5a;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menuDesplegable ul li ul{
+    margin-left: 20px;
+}
+
+.menuDesplegable ul{
+    margin-left: 20px;
+    display: none;
+}
+
+.menuDesplegable label{
+    color: #806e5a;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menuDesplegable input{
+    left: -1000em;
+    position: absolute;
+}
+
+.menuDesplegable li a::before{
+    content: '\025b8';
+}
+.menuDesplegable li label:before{
+    content: "\025b8";
+}
+.menuDesplegable li input:checked ~ label::before{
+    content: '\025be';
+}
+
+
+/*******************************************************************************/
+.contenedor{
+    width: 100%;
+    height: 300px;
+    background: url('./img/PRINCIPAL.jpg') no-repeat center center/cover ;
+    margin-top: 60px;
+    
+}
+
+/***********************************************************************************/
+.espacioResponsive{
+    margin: auto;
+    padding-top: 20px;
+}
+
+.espacioResponsive .divTexto{
+    min-height: 300px;
+    width: 90%;
+    margin: auto;
+}
+.espacioResponsive .divTexto h3{
+    padding-top: 20px;
+}
+
+.imagenesPrincipales{
+    height: 300px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    background: url('./img/F6.jpg') center no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenesPrincipales .controls a{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(194, 134, 6, 0.5);
+    color: black;
+    margin: 10px;
+}
+
+.content1 i {
+    margin-left: 5px;
+} 
+
+.content1 a{
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: white;
+    color: white;
+    padding: 5px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*************************************************************************************/
+
+.espacioResponsive .acercaDe{
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+.espacioResponsive h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/************************************************************************************/
+.misPerrosDiv{
+    padding-top: 60px;
+    width: 95%;
+    margin: auto;
+}
+.misPerrosDiv h2{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.misPerros{
+    background: #f1f1f1;
+    border-color: #757679;
+    border-bottom: 1px solid;
+    margin-bottom: 8px;
+    padding: 3px 0 3px 0;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 0px rgba(0,0,0,0.75);
+}
+
+.misPerros svg{
+    font-size: .7rem;
+}
+
+.misPerros .flechas{
+    margin-right: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.misPerros a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.espacioFotosMisPerros{
+    height: 0px;
+    max-height: 900px;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+
+.espacioFotosMisPerros{
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 97%;
+    margin: auto;
+    grid-auto-rows: minmax(auto , 900px); 
+}
+
+.espacioFotosMisPerros div{
+    width: 100%;
+    height: 250px;
+}
+
+.reduceEsta {
+    max-height: 270px;
+}
+
+.misPerrosDiv a {
+    text-decoration: none;
+    color: #000000;
+    margin: 5px 0 5px 0;
+}
+
+.misPerros h4 {
+    margin-left: 10px;
+}
+
+.misPerros div i {
+    font-size: .5rem;
+}
+
+#i11{
+    background: url('./img/atila1.jpg') ;
+    background-size: cover;
+}
+#i12{
+    background: url('./img/atila2.jpg') ;
+    background-size: cover;
+}
+#i13{
+    background: url('./img/atila3.jpg') ;
+    background-size: cover;
+}
+#i14{
+    background: url('./img/atila4.jpg') ;
+    background-size: cover;
+}
+#i21{
+    background: url('./img/atena1.jpg') ;
+    background-size: cover;
+}
+#i22{
+    background: url('./img/atena2.jpg')center no-repeat ;
+    background-size: cover;
+}
+#i23{
+    background: url('./img/atena3.jpg')center no-repeat ;
+    background-size: cover;
+}
+#i24{
+    background: url('./img/atena4.jpg')center no-repeat ;
+    background-size: cover;
+}
+#i31{
+    background: url('./img/corbato1.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i32{
+    background: url('./img/corbato2.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i33{
+    background: url('./img/corbato3.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i34{
+    background: url('./img/corbato4.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i41{
+    background: url('./img/gallega1.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i42{
+    background: url('./img/gallega2.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i43{
+    background: url('./img/gallega3.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i44{
+    background: url('./img/gallega4.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i51{
+    background: url('./img/candela1.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i52{
+    background: url('./img/candela2.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i53{
+    background: url('./img/candela3.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i54{
+    background: url('./img/candela4.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i61{
+    background: url('./img/fany1.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i62{
+    background: url('./img/fany2.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i11Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i12Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i13Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i14Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i21Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i22Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i23Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i24Cachorro{
+    background: url('img/p.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i11Cruce{
+    background: url('img/cruceH11.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i12Cruce{
+    background: url('img/cruceM11.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i13Cruce{
+    background: url('img/cruceH12.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i14Cruce{
+    background: url('img/cruceM12.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i21Cruce{
+    background: url('img/cruceH21.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i22Cruce{
+    background: url('img/cruceM21.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i23Cruce{
+    background: url('img/cruceH22.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i24Cruce{
+    background: url('img/cruceM22.jpg')center no-repeat ;
+    background-size: cover; 
+}
+
+/*************************************************************************************/
+
+.contactos{
+    background: url('./img/unica.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    padding-top: 450px;
+}
+
+.contactos a{
+    text-decoration: none;
+}
+
+.contactos::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 770px;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.contactos div{
+    position: absolute;
+    z-index: 33;
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contactos div h3, .contactos div p{
+    text-decoration: none;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.contactos div p{
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+.contactos div a{
+    color: white;
+    margin-left: 20px;
+}
+
+.contactos .primerContacto{
+    top: 120px;
+}
+.contactos .primerContacto a{
+    flex: 1;
+    display: flex;
+}
+.contactos .primerContacto h3{
+    padding-top: 20px;
+}
+
+.contactos .segundoContacto{
+    top: 340px;
+}
+.contactos .segundoContacto i{
+    margin-right: 10px;
+}
+.contactos .segundoContacto h3{
+    padding-bottom: 10px;
+}
+
+.contactos .tercerContacto{
+    top: 490px;
+}
+.contactos .tercerContacto h3{
+    padding-top: 20px;
+}
+.contactos .tercerContacto i{
+    margin-right: 10px;
+}
+
+.contactos .cuartoContacto{
+    top: 620px;
+}
+
+.segundoContacto svg, .tercerContacto svg {
+    margin-right: 20px;
+}
+
+/*****************************************************************************************/
+
+.carousel {
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider {
+    display: flex;
+    height: 100%;
+    width: 600%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+  
+  }
+  .slider section {
+    flex-basis: 16.66%;
+    flex-shrink:0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width:16.66%;
+  }
+  .controls button.next {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #806e5a;
+    margin-top: -30px;
+    background-color:#ddd;
+    border-radius:50%;
+    height:60px;
+    width:60px;
+    transition:.5s ease-in-out;
+  }
+  
+  .controls button.prev {
+    position: absolute;
+    left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #806e5a;
+    margin-top:-30px;
+    background-color:#ddd;
+    border-radius:50%;
+    height:60px;
+    width:60px;
+    transition:.5s ease-in-out;
+  }
+  
+  
+  .controls button svg {
+    font-size: 2rem;
+  }
+
+  
+  .cover1{
+      background: url(./img/F1.jpg) center no-repeat;
+      background-size: cover; 
+      width: 100%;
+      height: 100%;
+  }
+  .cover2{
+    background: url(./img/F2.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.cover3{
+    background: url(./img/F3.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+}
+.cover4{
+    background: url(./img/F4.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+}
+.cover5{
+    background: url(./img/F5.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+}
+.cover6{
+    background: url(./img/F6.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.content1{
+margin-top: 260px;
+text-align: right;
+}
+
+
+
+/*****************************************************************************************/
+
+.pie{
+    background: #2f3640;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+}
+
+.pie a{
+    cursor: pointer;
+    color: white;
+}
+
+.pie li{
+    margin: 5px;
+    list-style: none;
+}
+
+.pie h4{
+    margin-top: 30px;
+}
+
+/*********************************************************************************************************/
+
+@media(min-width: 800px) and (max-width:5000px){
+    .contenedor{
+        height: 500px;
+    }
+    .carousel{
+        height: 700px;
+    }
+    .imagenesPrincipales{
+        height: 700px;
+    }
+    .content1 {
+        margin-top: 660px
+    }
+    
+    .espacioFotosMisPerros div{
+        height: 600px;
+    }
+    .espacioFotosMisPerros{
+        max-height: 1120px;
+    }   
+   
+    .contactos{
+        height: 350px;
+    }
+    .contactos::after{
+        height: 820px;
+    }
+    .controls button.next {
+        margin-right: 30px;
+    }
+    .controls button.prev {
+        margin-left: 30px;
+    }
+ 
+}
