@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Oficial del Presa Canario en Cuba. KENNEL ALDABÓ, infórmate acerca del grupo de cría ¨Los Cabezones¨, nuestros perros, cruces, etc..">
+    <meta name="keywords"  content="perro, presa, canario, cuba, criadero">
+    <meta name="author" content="Roly Espinosa Alvarez">
+    <meta name="copyright" content="Rolando Espinosa Cancio">
+    <meta property='og:title' content="El Presa Canario en Cuba">
+    <meta property='og:type' content="article">
+    <meta property='og:image' content="">
+    <meta property='og:url' content="">
+    <title>El Presa Canario en Cuba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo"> 
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <img src="img/LOGO.png" alt="Perro">
+                </li>
+                <li id="unoN">
+                    <h3>LOS CABEZONES</h3>
+                </li>
+            </ul>
+            <li id="dosN">
+                <a class="menu"><i class="fas fa-list    "></i></a>
+            </li>
+
+        </nav>
+
+        <div id="selectMenu" class="menuD showMenu">
+            <ul class="menuDesplegable">
+                <li class="grande separa">
+                    <a href="#" onclick="carga('no', 'no')">Inicio</a>
+                </li>
+                <li class="separa">
+                    <input type="checkbox" name="list" id="uno" onclick="Muestra('PR')">
+                    <label for="uno" id='Patron_Racial'>Patrón Racial</label>
+                    <ul id="PR" class="ocultame">
+                        <li>
+                            <a href="#" onclick="carga('no','clasificacion')">Clasificacion</a>
+                        </li> 
+                        <li>
+                            <a href="#" onclick="carga('no','RG')">Rasgos generales</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','Temp')">Temperamento</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','RC-F')">Cráneo-Facial</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','Ojos')">Ojos</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','orejas')">Orejas</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','cuello')">Cuello</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','cuerpo')">Cuerpo</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','cola')">Cola</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','extre')">Extremidades</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','mov')">Movimiento</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','piel')">Piel/Manto</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','medidas')">Tamaño y peso</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','curvaC')">Curva de Desarrollo</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="carga('no','faltas')">Faltas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="separa">
+                    <input type="checkbox" name="list" id="tres" onclick="Muestra('Galeria')">
+                    <label for="tres" id="labelGaleria">Galería</label>
+                    <ul id="Galeria" class="ocultame">
+                        <li>
+                            <a onclick="muestraFotosMisPerros()">Nuestros perros</a>
+                        </li>
+                        <li>
+                            <a onclick="proximosCruces()">Próximos cruces</a>
+                        </li>
+                        <li>
+                            <a onclick="cachorrosDisponibles()">Cachorros Disponibles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="grande separa">
+                    <a href="#" onclick="acercaDe()">Acerca de nosotros</a>
+                </li>
+                <li class="grande separa">
+                    <a href="#" onclick="contactenos()">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="espacioResponsive">
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <script src="main.js"></script>
+    <script src="jquery/jquery-3.3.1.js"></script>
+</body>
+
+</html>
