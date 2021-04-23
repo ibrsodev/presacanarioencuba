@@ -46,8 +46,8 @@ function carga(id, clasificacion) {
     }
     muestraFotosPrincipales();
     muestraFooter();
-    if (document.body.style.marginBottom == '0px') {
-        document.body.style.marginBottom = '240px';
+    if (document.body.style.marginBottom == '240px' || document.body.style.marginBottom == '0px') {
+        document.body.style.marginBottom = '200px';
     }
 }
 
@@ -544,9 +544,8 @@ function acercaDe() {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '0px') {
-        document.body.style.marginBottom = '240px';
-    }
+
+    document.body.style.marginBottom = '240px';
 
     var div = document.createElement('div');
     div.className = 'acercaDe';
@@ -731,9 +730,9 @@ function contactenos() {
     var textoP3 = document.createTextNode('rec1972@yahoo.es');
     var textoP4 = document.createTextNode('Gonzalo Perez');
     var textoP5 = document.createTextNode('Presa Canario');
-    var textoP6 = document.createTextNode('Dogo Argentino & Presa Cnario & Bandogs');
+    var textoP6 = document.createTextNode('Dogo Argentino & Presa Canario & Bandogs');
 
-    var textoH3_4 = document.createTextNode('Contacto en Sudámeria:');
+    var textoH3_4 = document.createTextNode('Contacto en Sudaméria:');
     var textoH3_5 = document.createTextNode('Nuestros Grupos:');
 
     h3_1.appendChild(textoI);
@@ -855,11 +854,11 @@ function espacioParaLasFotos(numeroP) {
     if (espacioFotos != undefined) {
         if (window.screen.width <= 800) {
             if (espacioFotos != undefined) {
-                if (espacioFotos.style.height == '520px') {
+                if (espacioFotos.style.height == '480px') {
                     espacioFotos.style.height = '0';
                 }
                 else {
-                    espacioFotos.style.height = '520px';
+                    espacioFotos.style.height = '480px';
                 }
             }
         }
@@ -881,8 +880,8 @@ function muestraFotosMisPerros() {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '0px') {
-        document.body.style.marginBottom = '240px';
+    if (document.body.style.marginBottom == '240px' || document.body.style.marginBottom == '0px') {
+        document.body.style.marginBottom = '200px';
     }
 
     var principal = document.createElement('div');
@@ -1131,8 +1130,8 @@ function cachorrosDisponibles() {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '0px') {
-        document.body.style.marginBottom = '240px';
+    if (document.body.style.marginBottom == '240px'|| document.body.style.marginBottom == '0px') {
+        document.body.style.marginBottom = '200px';
     }
 
     var principal = document.createElement('div');
@@ -1227,8 +1226,8 @@ function proximosCruces() {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '0px') {
-        document.body.style.marginBottom = '240px';
+    if (document.body.style.marginBottom == '240px'|| document.body.style.marginBottom == '0px') {
+        document.body.style.marginBottom = '200px';
     }
 
     var principal = document.createElement('div');
