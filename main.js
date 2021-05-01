@@ -698,7 +698,7 @@ function contactenos() {
     var a6 = document.createElement('a');
     a1.href = 'https://www.facebook.com/rolando.espinosa.961';
     a2.href = 'https://api.whatsapp.com/send?phone=5352420615';
-    a3.href = 'mailto:rec1972@yahoo.com';
+    a3.href = 'mailto:rec1972@yahoo.es';
     a4.href = 'https://www.facebook.com/gonzalo.perez.31149';
     a5.href = 'https://www.facebook.com/groups/156162758309530/?ref=share';
     a6.href = 'https://www.facebook.com/groups/555483001715878/?ref=share';
