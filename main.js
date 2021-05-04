@@ -1123,7 +1123,9 @@ function llevameAPerro(perro) {
     muestraPerro2(perro);
 }
 
-function cachorros() {
+
+var CACHORROSX = document.getElementById('cachorros');
+CACHORROSX.addEventListener('click', ()=>{
     document.querySelector('.menuD').classList.toggle('showMenu');
     var todo = document.getElementsByClassName('espacioResponsive')[0];
     while (todo.hasChildNodes()) {
@@ -1136,7 +1138,8 @@ function cachorros() {
     cachorrosDisponibles();
     algunosCachorros();
     muestraFooter();
-}
+},false);
+
 
 function cachorrosDisponibles() {
     var todo = document.getElementsByClassName('espacioResponsive')[0];
