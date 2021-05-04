@@ -292,6 +292,20 @@ margin-top: 15px;
     font-size: .5rem;
 }
 
+.fotosCachorrosX{
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.fotosCachorrosX div{
+    width: 100%;
+    height: 200px;
+}
+
 #i11{
     background: url('./img/atila1.jpg') ;
     background-size: cover;
@@ -442,6 +456,78 @@ margin-top: 15px;
 }
 #i24Cruce{
     background: url('img/cruceM22.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i1CachorroX{
+    background: url('img/CX1.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i2CachorroX{
+    background: url('img/CX2.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i3CachorroX{
+    background: url('img/CX3.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i4CachorroX{
+    background: url('img/CX4.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i5CachorroX{
+    background: url('img/CX5.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i6CachorroX{
+    background: url('img/CX6.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i7CachorroX{
+    background: url('img/CX7.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i8CachorroX{
+    background: url('img/CX8.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i9CachorroX{
+    background: url('img/CX9.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i10CachorroX{
+    background: url('img/CX10.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i11CachorroX{
+    background: url('img/CX11.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i12CachorroX{
+    background: url('img/CX12.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i13CachorroX{
+    background: url('img/CX13.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i14CachorroX{
+    background: url('img/CX14.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i15CachorroX{
+    background: url('img/CX15.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i16CachorroX{
+    background: url('img/CX16.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i17CachorroX{
+    background: url('img/CX17.jpg')center no-repeat ;
+    background-size: cover; 
+}
+#i18CachorroX{
+    background: url('img/CX18.jpg')center no-repeat ;
     background-size: cover; 
 }
 

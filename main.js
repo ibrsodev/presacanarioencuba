@@ -549,7 +549,7 @@ function acercaDe() {
 
     var div = document.createElement('div');
     div.className = 'acercaDe';
-    if(window.screen.width>800){
+    if (window.screen.width > 800) {
         div.style.width = '70%';
     }
     var texto = document.createTextNode('Mi nombre es Rolando Espinosa, como todo amante del tema perrero desde muy niño, recuerdo perfecto varios mestizos (satos) que crié, luego por alrededor de 10 años tuve Dóberman y más tarde P.Alemanes. Conozco físicamente la raza en el 2008 donde quedo verdaderamente impactado con la rusticidad y cabeza de un cachorro atigrado descendiente de una pareja importada que nunca alcancé a ver.')
@@ -1123,17 +1123,23 @@ function llevameAPerro(perro) {
     muestraPerro2(perro);
 }
 
-function cachorrosDisponibles() {
+function cachorros() {
     document.querySelector('.menuD').classList.toggle('showMenu');
     var todo = document.getElementsByClassName('espacioResponsive')[0];
     while (todo.hasChildNodes()) {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '240px'|| document.body.style.marginBottom == '0px') {
+    if (document.body.style.marginBottom == '240px' || document.body.style.marginBottom == '0px') {
         document.body.style.marginBottom = '200px';
     }
+    cachorrosDisponibles();
+    algunosCachorros();
+    muestraFooter();
+}
 
+function cachorrosDisponibles() {
+    var todo = document.getElementsByClassName('espacioResponsive')[0];
     var principal = document.createElement('div');
     principal.className = 'misPerrosDiv';
     var h2 = document.createElement('h2');
@@ -1215,8 +1221,79 @@ function cachorrosDisponibles() {
     principal.appendChild(perro1Div);
     principal.appendChild(perro2Div);
     todo.appendChild(principal);
+}
 
-    muestraFooter();
+function algunosCachorros() {
+    var todo = document.getElementsByClassName('espacioResponsive')[0];
+    var principal = document.createElement('div');
+    principal.className = 'misPerrosDiv';
+    var h2 = document.createElement('h2');
+    var textoh2 = document.createTextNode('Algunos de nuestros Cachorros:');
+    h2.appendChild(textoh2);
+    var fotosCachorrosX = document.createElement('div');
+    fotosCachorrosX.className = 'fotosCachorrosX';
+
+    var foto1 = document.createElement('div');
+    foto1.id = 'i1CachorroX';
+    var foto2 = document.createElement('div');
+    foto2.id = 'i2CachorroX';
+    var foto3 = document.createElement('div');
+    foto3.id = 'i3CachorroX';
+    var foto4 = document.createElement('div');
+    foto4.id = 'i4CachorroX';
+    var foto5 = document.createElement('div');
+    foto5.id = 'i5CachorroX';
+    var foto6 = document.createElement('div');
+    foto6.id = 'i6CachorroX';
+    var foto7 = document.createElement('div');
+    foto7.id = 'i7CachorroX';
+    var foto8 = document.createElement('div');
+    foto8.id = 'i8CachorroX';
+    var foto9 = document.createElement('div');
+    foto9.id = 'i9CachorroX';
+    var foto10 = document.createElement('div');
+    foto10.id = 'i10CachorroX';
+    var foto11 = document.createElement('div');
+    foto11.id = 'i11CachorroX';
+    var foto12 = document.createElement('div');
+    foto12.id = 'i12CachorroX';
+    var foto13 = document.createElement('div');
+    foto13.id = 'i13CachorroX';
+    var foto14 = document.createElement('div');
+    foto14.id = 'i14CachorroX';
+    var foto15 = document.createElement('div');
+    foto15.id = 'i15CachorroX';
+    var foto16 = document.createElement('div');
+    foto16.id = 'i16CachorroX';
+    var foto17 = document.createElement('div');
+    foto17.id = 'i17CachorroX';
+    var foto18 = document.createElement('div');
+    foto18.id = 'i18CachorroX';
+    
+
+    principal.appendChild(h2);
+    principal.appendChild(fotosCachorrosX);
+    fotosCachorrosX.appendChild(foto1);
+    fotosCachorrosX.appendChild(foto2);
+    fotosCachorrosX.appendChild(foto3);
+    fotosCachorrosX.appendChild(foto4);
+    fotosCachorrosX.appendChild(foto5);
+    fotosCachorrosX.appendChild(foto6);
+    fotosCachorrosX.appendChild(foto7);
+    fotosCachorrosX.appendChild(foto8);
+    fotosCachorrosX.appendChild(foto9);
+    fotosCachorrosX.appendChild(foto10);
+    fotosCachorrosX.appendChild(foto11);
+    fotosCachorrosX.appendChild(foto12);
+    fotosCachorrosX.appendChild(foto13);
+    fotosCachorrosX.appendChild(foto14);
+    fotosCachorrosX.appendChild(foto15);
+    fotosCachorrosX.appendChild(foto16);
+    fotosCachorrosX.appendChild(foto17);
+    fotosCachorrosX.appendChild(foto18);
+
+
+    todo.appendChild(principal);
 }
 
 function proximosCruces() {
@@ -1226,7 +1303,7 @@ function proximosCruces() {
         var elimina = todo.firstChild;
         todo.removeChild(elimina);
     }
-    if (document.body.style.marginBottom == '240px'|| document.body.style.marginBottom == '0px') {
+    if (document.body.style.marginBottom == '240px' || document.body.style.marginBottom == '0px') {
         document.body.style.marginBottom = '200px';
     }
 
