@@ -1228,7 +1228,7 @@ function algunosCachorros() {
     var principal = document.createElement('div');
     principal.className = 'misPerrosDiv';
     var h2 = document.createElement('h2');
-    var textoh2 = document.createTextNode('Algunos de nuestros Cachorros:');
+    var textoh2 = document.createTextNode('Algunos de Nuestros Cachorros:');
     h2.appendChild(textoh2);
     var fotosCachorrosX = document.createElement('div');
     fotosCachorrosX.className = 'fotosCachorrosX';
